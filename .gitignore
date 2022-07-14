@@ -32,7 +32,6 @@ example/.dart_tool
 example/.idea
 example/android
 example/ios
-example/lib
 example/linux
 example/macos
 example/test
