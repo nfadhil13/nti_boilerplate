@@ -68,6 +68,8 @@ abstract class ColorTheme {
 
   MaterialColor primaryContainer();
 
+  MaterialColor onPrimaryContainer();
+
   MaterialColor secondary();
 
   MaterialColor onSecondary();

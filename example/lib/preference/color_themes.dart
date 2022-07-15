@@ -162,6 +162,12 @@ class DarkMode extends ColorTheme {
     // TODO: implement tertiaryContainer
     return _default;
   }
+  
+  @override
+  MaterialColor onPrimaryContainer() {
+    // TODO: implement onPrimaryContainer
+    throw UnimplementedError();
+  }
 }
 
 class WhiteMode extends ColorTheme {
@@ -322,5 +328,11 @@ class WhiteMode extends ColorTheme {
   MaterialColor tertiaryContainer() {
     // TODO: implement tertiaryContainer
     return _default;
+  }
+  
+  @override
+  MaterialColor onPrimaryContainer() {
+    // TODO: implement onPrimaryContainer
+    throw UnimplementedError();
   }
 }
