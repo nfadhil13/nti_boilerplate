@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+part of '../nti_boilerplate.dart';
 
 class ColorThemeWidget extends StatefulWidget {
   final ColorTheme initialTheme;

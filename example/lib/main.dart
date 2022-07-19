@@ -1,7 +1,6 @@
 import 'package:example/preference/color_themes.dart';
 import 'package:flutter/material.dart';
-import 'package:nti_boilerplate/auth/authenticated_scope.dart';
-import 'package:nti_boilerplate/preferences/color_theme.dart';
+import 'package:nti_boilerplate/nti_boilerplate.dart';
 
 class User {
   final String name;
@@ -34,15 +33,8 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: ColorThemeWidget(
-        initialTheme: DarkMode(),
-        child: AuthenticatedScope<User>(() {
-          //Do something to logut
-          print("Logout");
-        },
-            currentUser: User("John Doe", "This is the token"),
-            child: const MyHomePage()),
-      ),
+      home:
+          ColorThemeWidget(initialTheme: DarkMode(), child: const MyHomePage()),
     );
   }
 }
@@ -57,14 +49,13 @@ class MyHomePage extends StatelessWidget {
       body: Column(
         children: [
           Text(
-            context.currentUser<User>().name,
+            "Halo",
             style: TextStyle(color: context.colorTheme().onPrimary()),
           ),
-          Text(context.currentUser<User>().token,
+          Text("Token",
               style: TextStyle(color: context.colorTheme().onPrimary())),
           ElevatedButton(
               onPressed: () {
-                context.logOut<User>();
               },
               child: const Text("Logout")),
           ElevatedButton(

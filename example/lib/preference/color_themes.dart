@@ -1,6 +1,5 @@
 import 'package:flutter/src/material/colors.dart';
-import 'package:nti_boilerplate/preferences/color_theme.dart';
-
+import 'package:nti_boilerplate/nti_boilerplate.dart';
 const _default = const MaterialColor(0xFF3, const {});
 
 class DarkMode extends ColorTheme {
